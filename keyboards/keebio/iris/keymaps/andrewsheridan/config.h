@@ -20,13 +20,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // #define USE_I2C
 #define EE_HANDS
 #define MK_3_SPEED
-#define MK_MOMENTARY_ACCEL
+#define MK_COMBINED
+//#define MK_MOMENTARY_ACCEL
+
 #define MOUSEKEY_DELAY 200
-#define MOUSEKEY_INTERVAL 8
-#define MOUSEKEY_TIME_TO_MAX 0
-#define MOUSEKEY_MAX_SPEED 5
-#define MK_C_OFFSET_UNMOD 10
-#define MK_C_OFFSET_0 5
-#define MK_C_OFFSET_1 20
-#define MK_C_OFFSET_2 30
+#define MOUSEKEY_INTERVAL 2
+//#define MOUSEKEY_TIME_TO_MAX 250
+//#define MOUSEKEY_MAX_SPEED 36
+
+#define MOUSEKEY_WHEEL_DELAY 300
+#define MOUSEKEY_WHEEL_INTERVAL 100
+#define MOUSEKEY_WHEEL_MAX_SPEED 8
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 40
+
+//#define MK_C_OFFSET_UNMOD 4
+#define MK_C_OFFSET_0 3
+#define MK_C_OFFSET_1 9
+#define MK_C_OFFSET_2 27
 

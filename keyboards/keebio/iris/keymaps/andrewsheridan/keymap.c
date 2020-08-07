@@ -10,6 +10,7 @@ enum custom_keycodes {
   LOWER,
   RAISE,
   ADJUST,
+  EMAIL
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -24,8 +25,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      LSFT_T(KC_LBRC), KC_Z,            KC_X,             KC_C,            KC_V,            KC_B,           KC_ESC,                   LT(3,KC_MPLY),   KC_N,            KC_M,            KC_COMM,         KC_DOT,          KC_SLSH,         RSFT_T(KC_RBRC),
   //└────────────────┴────────────────┴────────────────┴────────────────┼────────────────┼────────────────┼────────────────┤        ├────────────────┼────────────────┼────────────────┼────────────────┴────────────────┴────────────────┴────────────────┘
                                                                           //LALT_T(KC_GRV), KC_LCTRL,        LSFT_T(KC_BSPC),          LT(2,KC_ENT),    LT(1,KC_SPC),    KC_LGUI
+                                                                          LALT_T(KC_GRV), KC_LSHIFT,        LCTL_T(KC_BSPC),          LT(2,KC_ENT),    LT(1,KC_SPC),    KC_LGUI
                                                                      // └────────────────┴────────────────┴────────────────┘        └────────────────┴────────────────┴────────────────┘
-                                                                     LALT_T(KC_GRV), KC_LSHIFT,        LCTL_T(KC_BSPC),          LT(2,KC_ENT),    LT(1,KC_SPC),    KC_LGUI
+                                                                     
   ),
 
   [_LOWER] = LAYOUT(
@@ -70,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                      // └────────────────┴────────────────┴────────────────┘        └────────────────┴────────────────┴────────────────┘
   )
 };
-/*
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case QWERTY:
@@ -111,6 +113,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   return true;
 }
 
+/*
 void encoder_update_user(uint8_t index, bool clockwise) {
     if (index == 0) {
         if (clockwise) {
@@ -127,4 +130,5 @@ void encoder_update_user(uint8_t index, bool clockwise) {
         }
     }
 }
+
 */
